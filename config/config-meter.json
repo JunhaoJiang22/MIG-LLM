@@ -1,0 +1,63 @@
+{
+    "config_name": null,
+    "train": false,
+    "eval": false,
+
+    "model_name_or_path": "",
+    "model_config_name": null,
+    "model_type": null,
+
+    "dataset_path": "./datasets/",
+    "dataset_name": null,
+    "metric": "meter",
+
+    "obs_len": 20,
+    "pred_len": 12,
+
+    "preprocessing_num_workers": 32,
+    "cache_dir": "./.cache/",
+    "overwrite_cache": false,
+
+    "tokenizer_name": "./checkpoint/tokenizer/",
+    "use_slow_tokenizer": false,
+
+    "pad_to_max_length": false,
+
+    "history_column": "observation",
+    "future_column": "forecast",
+
+    "max_source_length": 520,
+    "max_target_length": 128,
+
+    "per_device_train_batch_size": 4,
+    "per_device_eval_batch_size": 4,
+    "per_device_inference_batch_size": 1,
+
+    "num_train_epochs": 20,
+    "max_train_steps": null,
+    "gradient_accumulation_steps": 4,
+
+    "learning_rate": 0.00004,
+    "weight_decay": 0.0,
+
+    "lr_scheduler_type": "linear",
+    "num_warmup_steps": 0,
+
+    "seed": 0,
+
+    "checkpoint_path": "./checkpoint/",
+    "checkpoint_name": null,
+    "checkpointing_steps": "epoch",
+    "resume_from_checkpoint": null,
+    "test_model": "best_model",
+    
+    "use_logger": false,
+    "logger_type": "",
+
+    "num_beams": 2,
+    "deterministic": false,
+    "top_k": 20,
+    "temperature": 0.5,
+    "best_of_n": 20,
+    "num_samples": 20
+}

@@ -1,0 +1,7 @@
+# Datasets are distributed separately.
+/datasets/
+
+# Generated Python and notebook files.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
